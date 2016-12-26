@@ -1,0 +1,126 @@
+body
+{
+    background: #eee;
+}
+/*----------------
+   main todo list
+-----------------*/
+
+.mainContainer
+{
+    position: relative;
+    width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border: solid 1px #ccc;
+    overflow: auto;
+}
+h1
+{
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    border-bottom: solid 1px #ddd;
+}
+#todoListWrapper
+{
+    width: 960px;
+    text-align: center;
+
+
+}
+#todoList:after
+{
+    clear: both;
+    display: table;
+    content: "";
+}
+ul {
+    list-style: none;
+}
+
+#todoList ul
+{
+    width: 14.28%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    float: left;
+
+}
+#todoList li
+{
+    background: none;
+    padding: 5px;
+    border: none;
+    margin: 0px;
+    text-align: left;
+    font-size: 14px;
+}
+
+#todoList li:hover
+{
+    background: #eee;
+    border-color: #aaa;
+    cursor: pointer;
+
+}
+#todoList li.listTitle
+{
+    background: #444;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-right: solid 1px white;
+    font-size: 14px;
+}
+#todoList li.listTitle:hover,
+#todoList li.listTitle:active
+{
+    cursor: default;
+    transform: none;
+}
+#todoList .emptySpace
+{
+    background: #fc3;
+    border: dashed 1px #777;
+    height: 10px;
+}
+#todoList li.addItem
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    background: none;
+}
+#todoList ul:hover li.addItem
+{
+    display: block;
+}
+#todoList li.addItem input
+{
+    width: 90%;
+    padding: 4px;
+}
+#todoList li.addItem:active
+{
+    transform: none;
+}
+#trash
+{
+    background: url("../img/Trash_icon.png");
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+
+}
+/*--------------
+     modal
+---------------*/
+#error
+{
+    display: none;
+}
